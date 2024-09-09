@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f5;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #333333;
+}
+
+.user-input {
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.user-input:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+.user-input::placeholder {
+    color: #aaaaaa;
+}
+
+.submit-button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #16a085;
+    transform: scale(1.01);
+}
+
+.submit-button:disabled {
+    background-color: #a0dcd3;
+    cursor: not-allowed;
+}
+
+.output {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: auto;
+    white-space: pre-wrap;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.pre-container {
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.load {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ffffff;
+    border-top-color: #1abc9c;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
